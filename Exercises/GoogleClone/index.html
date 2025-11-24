@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Google — Clone (HTML & CSS)</title>
+
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<header class="topbar">
+			<nav class="nav">
+				<div class="nav-left">
+					<a href="#">Gmail</a>
+					<a href="#">Images</a>
+				</div>
+				<div class="nav-right">
+					<a class="apps" href="#" aria-label="Google apps">☰</a>
+					<a class="signin" href="#">Sign in</a>
+				</div>
+			</nav>
+		</header>
+
+		<main class="main">
+			<div class="logo" aria-hidden="true">
+				<!-- textual "logo" -->
+				<span class="logo-g">G</span><span class="logo-o">o</span><span class="logo-o2">o</span><span class="logo-g2">g</span><span class="logo-l">l</span><span class="logo-e">e</span>
+			</div>
+
+			<form class="search" action="#" method="get" role="search" aria-label="Search">
+				<label for="q" class="visually-hidden">Search</label>
+				<div class="search-box">
+					<!-- inline svg icon -->
+					<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+						<path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16a6.471 6.471 0 004.23-1.57l.27.28v.79L20 20.49 21.49 19 15.5 14z" />
+					</svg>
+
+					<input id="q" name="q" type="search" placeholder="Search Google or type a URL" autocomplete="off" />
+
+					<!-- mic icon -->
+					<svg class="mic" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+						<path d="M12 14a3 3 0 003-3V5a3 3 0 10-6 0v6a3 3 0 003 3zM19 11a1 1 0 10-2 0 5 5 0 01-5 5 5 5 0 01-5-5 1 1 0 10-2 0 7 7 0 006 6.92V21a1 1 0 002 0v-3.08A7 7 0 0019 11z"/>
+					</svg>
+				</div>
+
+				<div class="buttons">
+					<button type="submit">Google Search</button>
+					<button type="button">I'm Feeling Lucky</button>
+				</div>
+			</form>
+		</main>
+
+		<footer class="footer">
+			<div class="footer-top">
+				<p>Croatia</p>
+			</div>
+			<div class="footer-links">
+				<a href="#">About</a>
+				<a href="#">Advertising</a>
+				<a href="#">Business</a>
+				<a href="#">How Search works</a>
+			</div>
+		</footer>
+	</body>
+</html>
