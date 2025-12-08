@@ -1,0 +1,140 @@
+@font-face {
+	font-family: "InterVar";
+	src: url("./assets/fonts/Inter-Variable.ttf") format("truetype");
+	font-weight: 100 900;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: InterVar, Arial, sans-serif;
+}
+
+body {
+	background: #fafafa;
+	padding: 20px;
+	color: #333;
+	transition: background 0.25s, color 0.25s;
+}
+
+main {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px;
+	max-width: 1000px;
+	margin: auto;
+}
+
+@media (max-width: 768px) {
+	main {
+		grid-template-columns: 1fr;
+	}
+}
+
+section {
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	border: 1px solid #dcdcdc;
+	transition: border-color 0.2s, background 0.25s;
+}
+
+section:hover {
+	border-color: #9e9e9e;
+}
+
+section h2 {
+	font-size: 18px;
+	color: #1a76ff;
+	margin-bottom: 15px;
+	border-bottom: 2px solid #1a76ff;
+	padding-bottom: 6px;
+}
+
+section h1 {
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+section > div {
+	border-top: 1px solid #e0e0e0;
+	padding-top: 15px;
+	margin-top: 15px;
+}
+
+ul {
+	list-style: none;
+	margin-top: 10px;
+}
+
+ul li {
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.icon {
+	width: 12px;
+	height: 12px;
+}
+
+ul li a {
+	text-decoration: none;
+	font-size: 16px;
+	color: inherit;
+	transition: color 0.2s;
+}
+
+ul li a:hover {
+	color: #1a76ff;
+}
+
+#darkToggle {
+	position: fixed;
+	top: 20px;
+	right: 20px;
+	padding: 8px 12px;
+	background: #333;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 18px;
+	z-index: 999;
+	transition: background 0.25s;
+}
+
+body.dark {
+	background: #111;
+	color: #eee;
+}
+
+body.dark section {
+	background: #1e1e1e;
+	border-color: #333;
+}
+
+body.dark section h1 {
+	color: #aaa;
+}
+
+body.dark section h2 {
+	color: #4da3ff;
+	border-bottom-color: #4da3ff;
+}
+
+body.dark .icon {
+	filter: invert(1);
+}
+
+body.dark ul li a:hover {
+	color: #4da3ff;
+}
+
+body.dark #darkToggle {
+	background: #555;
+}

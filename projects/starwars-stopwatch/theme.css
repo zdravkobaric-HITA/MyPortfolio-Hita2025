@@ -1,0 +1,25 @@
+/* Jedi Light side */
+body.jedi-mode {
+    --accent:#00e1ff;
+    --bg:#0d0d0d;
+    --text:#e8faff;
+    --panel:rgba(0, 54, 75, 0.35);
+    --btn-bg:#002d35;
+    --lap-bg:rgba(255,255,255,.05);
+    --shadow:#00e1ff55;
+    --fastest:#00ff57;
+    --slowest:#ff003c;
+}
+
+/* Sith Dark side */
+body.sith-mode {
+    --accent:#ff003c;
+    --bg:#050000;
+    --text:#ffe0e0;
+    --panel:rgba(75, 0, 0, 0.35);
+    --btn-bg:#220000;
+    --lap-bg:rgba(255,255,255,.07);
+    --shadow:#ff003c55;
+    --fastest:#00ff57;
+    --slowest:#8119b5;
+}

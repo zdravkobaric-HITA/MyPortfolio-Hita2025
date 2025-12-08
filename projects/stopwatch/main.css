@@ -1,0 +1,83 @@
+/* 
+Osnovni stil za cijelu stranicu
+--------------------------------
+- koristimo flex da centriramo stopwatch na sredinu ekrana
+- background svijetlosiva radi jasnog kontrasta
+*/
+
+body {
+    font-family: Arial, sans-serif;    /* font slova na stranici */
+    display: flex;                     /* omogućava poravnanje elemenata */
+    justify-content: center;           /* centriranje vodoravno */
+    align-items: center;               /* centriranje okomito */
+    height: 100vh;                     /* visina = cijeli ekran */
+    margin: 0;                         /* uklanja default margine browsera */
+    background: #f4f4f4;               /* svijetlosiva pozadina */
+}
+
+/*
+Glavni container štoperice
+text-align centrira sav tekst i gumbe
+*/
+.stopwatch {
+    text-align: center;
+}
+
+/* Display vremena na vrhu (velik i lako čitljiv) */
+h1 {
+    font-size: 48px;      /* veći font za prikaz vremena */
+    margin-bottom: 15px;  /* razmak ispod display-a */
+}
+
+/*
+Stil gumba
+--------------
+- mali padding za veći klikabilan prostor
+- margin daje razmak između gumba
+*/
+.buttons button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 16px;      /* veličina teksta u gumbu */
+    cursor: pointer;      /* kursor postaje ruka -> vizualni klik efekt */
+}
+
+/*
+Lista lapova (krugova)
+-----------------------
+- uklanjamo default bullet točke
+- razmak od displaya i čitljiv font
+*/
+#laps {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+/*
+Istaknuto označavanje najbržeg i najsporijeg lapa
+--------------------------------------------------
+fastest = zeleno  (najkraći krug)
+slowest = crveno  (najduži krug)
+*/
+.fastest { 
+    color: green; 
+    font-weight: bold; 
+}
+
+.slowest { 
+    color: red; 
+    font-weight: bold; 
+}
+
+/* Sekcija ispod lap liste (sumarni prikaz) */
+#summary {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* Vrijednosti vremena boldane radi boljeg isticanja */
+#summary span {
+    font-weight: bold;
+}

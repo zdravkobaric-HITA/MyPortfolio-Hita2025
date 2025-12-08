@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+DOCTYPE govori browseru da koristimo moderni HTML5 standard.
+Ovo je prva linija svakog HTML dokumenta.
+-->
+<html lang="en">
+<!--
+lang="en" znači da je jezik stranice engleski.
+-->
+	<head>
+			<meta charset="UTF-8">
+			<!--
+			<meta charset="UTF-8"> definira način kodiranja znakova.
+			UTF-8 omogućava prikaz svih znakova (č,ć,š,đ,ž...).
+			-->
+
+			<title>Basic Stopwatch</title>
+			<!--
+			Naslov stranice koji se prikazuje u tabu browsera.
+			-->
+
+			<link rel="stylesheet" href="main.css">
+			<!--
+			Povezujemo eksterni CSS file gdje se nalazi stil (boje, fontovi, layout).
+			-->
+	</head>
+	<body>
+	<!--
+	Sve što korisnik vidi na stranici nalazi se unutar <body>.
+	-->
+	<div class="stopwatch">
+		<!-- Glavni container za štopericu -->
+
+		<h1 id="display">00:00.00</h1>
+		<!--
+		Ovo je veliki display koji pokazuje vrijeme.
+		id="display" koristimo u JavaScriptu da ga možemo mijenjati.
+		-->
+
+		<div class="buttons">
+			<!-- Ovdje se nalaze tri glavna gumba aplikacije -->
+
+			<button id="startStop">Start</button>
+			<!--
+			Klikom pokrećemo ili pauziramo štopericu.
+			JavaScript ga pronalazi preko id="startStop".
+			-->
+
+			<button id="lap">Lap</button>
+			<!--
+			Sprema proteklo vrijeme lapa i resetira brojač za novi lap.
+			-->
+
+			<button id="reset">Reset</button>
+			<!--
+			Reset vraća vrijeme na 0 i briše sve lapove.
+			-->
+		</div>
+		<ul id="laps"></ul>
+		<!--
+		<ul> = lista. Ovdje će se ispisivati svi krugovi (lapovi).
+		JavaScript će dinamički dodavati <li> elemente.
+		-->
+			
+		<div id="summary">
+			<!-- Prikaz trenutnog najbržeg i najsporijeg kruga -->
+
+			<p>Fastest: <span id="fastestTime">-</span></p>
+			<!-- <span> koristimo da možemo mijenjati samo broj kroz JS -->
+
+			<p>Slowest: <span id="slowestTime">-</span></p>
+		</div>
+	</div>
+	<!--
+	Spajamo JavaScript file na kraj body-a.
+	Zašto na kraj? – jer se HTML elementi učitaju prije skripte,
+	pa JS odmah ima pristup elementima (display, buttons, lists...).
+	-->
+	<script src="main.js"></script>
+	</body>
+</html>

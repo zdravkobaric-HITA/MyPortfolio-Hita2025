@@ -1,0 +1,131 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f3f4f6;
+}
+
+/* Card container */
+.card {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background: #ddebf8;
+    color: #2b2839;
+    border-bottom: 6px solid #0A66C2;
+    border-radius: 14px;
+}
+
+/* Avatar */
+.avatar {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Info text */
+.info h3 {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.role {
+    font-size: 16px;
+    margin: 0;
+}
+
+.location {
+    font-size: 14px;
+    color: #444;
+    margin-top: 4px;
+}
+
+/* Skills chips */
+.skills {
+    margin: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.chip {
+    padding: 6px 10px;
+    background: #fff;
+    border-radius: 12px;
+    font-size: 12px;
+    border: 1px solid #c5c9ff;
+}
+
+/* Links section */
+.links {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.linkedin {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #0A66C2; 
+    font-weight: bold;
+}
+
+.linkedin:hover {
+    text-decoration: underline;
+    color: #084a8e;
+}
+
+
+/* GitHub link */
+.github {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.github:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+.hire-btn {
+    margin-top: 12px;
+    padding: 10px 16px;
+    background: #4285f4;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.hire-btn:hover {
+    background: #2b67c7;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .avatar {
+        width: 70%;
+    }
+
+    .links {
+        justify-content: center;
+    }
+}

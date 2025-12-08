@@ -1,0 +1,106 @@
+:root{
+  --bg: #fff;
+  --muted: #70757a;
+  --border: #dadce0;
+  --accent: #1a73e8;
+  --max-width: 760px;
+  --radius: 24px;
+  --font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);font-family:var(--font);color:#202124}
+
+/* top navigation */
+.topbar{width:100%;padding:8px 24px;display:flex;justify-content:center}
+.nav{max-width:1120px;width:100%;display:flex;justify-content:space-between;align-items:center}
+.nav a{color:var(--muted);text-decoration:none;margin-left:18px;font-size:14px}
+.nav-left a{margin-left:0;margin-right:18px}
+
+/* main center area */
+.main{
+  min-height:calc(100vh - 140px);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  padding:40px 16px 20px;
+}
+
+/* logo (textual) */
+.logo{font-size:92px;line-height:1;margin-bottom:24px;user-select:none}
+.logo-g{color:#4285F4;font-weight:500}
+.logo-o{color:#EA4335;font-weight:500}
+.logo-o2{color:#FBBC05;font-weight:500}
+.logo-g2{color:#4285F4;font-weight:500}
+.logo-l{color:#34A853;font-weight:500}
+.logo-e{color:#EA4335;font-weight:500}
+
+/* search box */
+.search{width:100%;max-width:var(--max-width)}
+.search-box{
+  display:flex;
+  align-items:center;
+  background:white;
+  border:1px solid var(--border);
+  padding:14px 18px;
+  border-radius:var(--radius);
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+}
+
+/* icon styles */
+.search-box .icon, .search-box .mic{
+  width:20px;height:20px;flex:0 0 20px;fill:var(--muted);opacity:.75
+}
+
+.search-box input[type="search"]{
+  flex:1;margin:0 12px;border:0;outline:none;font-size:16px;background:transparent;
+  color:#202124
+}
+
+/* buttons */
+.buttons{display:flex;gap:10px;justify-content:center;margin-top:20px}
+button{
+  background:#f8f9fa;border:1px solid var(--border);padding:10px 16px;border-radius:4px;
+  font-size:14px;color:#0a0a0ad3;cursor:pointer;
+  box-shadow:none;
+}
+button[type="submit"]{background:#f8f9fa}
+button[type="button"]{background:#f8f9fa}
+
+/* footer */
+.footer {
+  background-color: #f2f2f2;
+  color: #0a0a0ad3;
+  padding: 15px 30px;
+  font-size: 14px;
+  border-top: 1px solid #dadce0;
+}
+
+.footer-top {
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #0a0a0ad3;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+/* responsivness*/
+@media (max-width:640px){
+  .logo{font-size:64px}
+  .search-box{padding:10px;border-radius:20px}
+  .search-box input[type="search"]{font-size:15px}
+  .buttons{flex-direction:column}
+  .nav a{font-size:13px}
+}

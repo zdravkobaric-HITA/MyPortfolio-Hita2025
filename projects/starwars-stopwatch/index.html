@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Star Wars Stopwatch</title>
+
+			<link rel="stylesheet" href="main.css">
+			<link rel="stylesheet" href="theme.css">
+	</head>
+
+	<body class="jedi-mode">
+		<section class="help" id="helpToggle">
+			<button class="help-btn">
+				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+					<path fill="currentColor"
+						d="M11 17h2v-6h-2zm1-8q.425 0 .713-.288T13 8t-.288-.712T12 7t-.712.288T11 
+						8t.288.713T12 9m0 13q-2.075 0-3.9-.788t-3.175-2.137T2.788 15.9T2 12t.788-3.9t2.137-3.
+						175T8.1 2.788T12 2t3.9.788t3.175 2.137T21.213 8.1T22 12t-.788 3.9t-2.137 3.175t-3.175 
+						2.138T12 22m0-2q3.35 0 5.675-2.325T20 12t-2.325-5.675T12 4T6.325 6.325T4 12t2.325 
+						5.675T12 20m0-8"
+						/>
+				</svg>
+			</button>
+
+			<div class="help-info">
+					<div class="key-wrapper"><div class="key">Space</div><p>Start / Stop</p></div>
+					<div class="key-wrapper"><div class="key">Enter</div><p>Lap</p></div>
+					<div class="key-wrapper"><div class="key">Backspace</div><p>Reset</p></div>
+			</div>
+		</section>
+
+		<div class="container">
+			<h1 class="title">STAR WARS STOPWATCH</h1>
+
+			<div id="timer" class="timer-display">00:00.00</div>
+
+			<div class="controls">
+				<button id="startStopBtn" class="btn saber-btn"  type="button" data-icon="start">
+					<img class="icon" src="icons/start-jedi.svg">
+					<span>Start</span>
+				</button>
+
+				<button id="lapBtn" class="btn"  type="button" data-icon="lap">
+					<img class="icon" src="icons/lap-jedi.svg">
+					<span>Lap</span>
+				</button>
+
+				<button id="resetBtn" class="btn"  type="button" data-icon="reset">
+					<img class="icon" src="icons/reset-jedi.svg">
+					<span>Reset</span>
+				</button>
+			</div>
+
+			<div class="theme-toggle">
+				<span>JEDI</span>
+				<label class="switch">
+						<input type="checkbox" id="themeToggle">
+						<span class="slider"></span>
+				</label>
+				<span>SITH</span>
+			</div>
+
+			<ul id="laps" class="laps-list"></ul>
+
+			<div class="lap-legend">
+				<span class="fast">Fastest: <span id="fastDisplay">—</span></span>
+				<span class="slow">Slowest: <span id="slowDisplay">—</span></span>
+			</div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>
