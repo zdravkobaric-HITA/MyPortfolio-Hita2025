@@ -17,7 +17,8 @@ const data = {
             { name: "Calculator", path: "exercises/calculator/" }
         ],
         projects: [
-            { name: "Stopwatch", path: "projects/stopwatch/" }
+            { name: "Basic Stopwatch", path: "projects/stopwatch/" },
+            { name: "StarWars Stopwatch", path: "projects/starwars-stopwatch/" }
         ]
     }
 };
