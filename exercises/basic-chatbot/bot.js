@@ -9,8 +9,8 @@
 // -----------------------------
 // 1. ISPIS U KONZOLU (console.log)
 // -----------------------------
-console.log("Hello! My name is Aid.");
-console.log("I was created in 2020.");
+console.log("Hello! My name is Basic HealthyBot.");
+console.log("I was created in 2025.");
 
 // -----------------------------
 // 2. ULAZ OD KORISNIKA (prompt)
