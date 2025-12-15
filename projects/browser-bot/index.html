@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Advanced HealthyBot</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="chat-container">
+      <!-- Step 1: Greeting -->
+      <div class="screen" id="greet-screen">
+        <p>Hello! My name is HealthyBot.<br>I was created in 2025.</p>
+        <button id="greet-next">Next</button>
+      </div>
+      <!-- Step 2: Name input -->
+      <div class="screen hidden" id="name-screen">
+        <p>Please, remind me your name:</p>
+        <input type="text" id="name-input">
+        <button id="name-next">Submit</button>
+      </div>
+      <!-- Step 3: Name confirmation -->
+      <div class="screen hidden" id="name-confirm-screen">
+        <p id="name-confirm-text"></p>
+        <button id="age-next">Next</button>
+      </div>
+      <!-- Step 4: Age input -->
+      <div class="screen hidden" id="age-screen">
+        <p>Let me guess your age.<br>Enter remainders of dividing your age by 3, 5 and 7:</p>
+        <input type="number" id="r3" placeholder="Remainder when divided by 3">
+        <input type="number" id="r5" placeholder="Remainder when divided by 5">
+        <input type="number" id="r7" placeholder="Remainder when divided by 7">
+        <button id="age-submit">Submit</button>
+      </div>
+      <!-- Step 5: Age result -->
+      <div class="screen hidden" id="age-result-screen">
+        <p id="age-result-text"></p>
+        <button id="bmi-next">Next</button>
+      </div>
+      <!-- Step 6: BMI input -->
+      <div class="screen hidden" id="bmi-screen">
+        <p>Let's test your BMI index!</p>
+        <input type="number" id="height" placeholder="Enter height in cm">
+        <input type="number" id="weight" placeholder="Enter weight in kg">
+        <select id="gender">
+          <option value="">Select gender</option>
+          <option value="M">Male</option>
+          <option value="F">Female</option>
+        </select>
+        <button id="bmi-calc">Calculate BMI</button>
+      </div>
+      <!-- Step 7: BMI result -->
+      <div class="screen hidden" id="bmi-result-screen">
+        <p id="bmi-result-text"></p>
+        <button id="bmi-repeat">Calculate Again</button>
+        <button id="end-btn">End</button>
+      </div>
+    </div>
+    <script src="bot.js"></script>
+  </body>
+</html>
