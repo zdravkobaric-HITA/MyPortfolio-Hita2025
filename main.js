@@ -14,11 +14,15 @@ const data = {
 
     js: {
         exercises: [
-            { name: "Calculator", path: "exercises/calculator/" }
+            { name: "Calculator", path: "exercises/calculator/" },
+            { name: "Basic Console Chatbot", path: "exercises/chatbots/basic-console-chatbot/" },
+            { name: "Advanced Console Chatbot", path: "exercises/chatbots/advanced-console-chatbot/" }
         ],
         projects: [
             { name: "Basic Stopwatch", path: "projects/stopwatch/" },
-            { name: "StarWars Stopwatch", path: "projects/starwars-stopwatch/" }
+            { name: "StarWars Stopwatch", path: "projects/starwars-stopwatch/" },
+            { name: "Basic Browser Bot", path: "projects/browser-bot/" },
+            { name: "State Machine Bot", path: "projects/state-machine-bot/" }
         ]
     }
 };

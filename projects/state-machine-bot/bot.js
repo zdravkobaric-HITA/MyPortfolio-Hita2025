@@ -77,7 +77,7 @@ function render() {
     switch (state) {
 
         case "INTRO":
-            setText("Hello! My name is Aid.\nI was created in 2025.");
+            setText("Hello! My name is Healthy Bot.\nI was created in 2025.");
             break;
 
         case "ASK_NAME":
