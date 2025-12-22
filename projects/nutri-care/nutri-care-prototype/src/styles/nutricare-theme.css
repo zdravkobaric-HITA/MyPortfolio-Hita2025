@@ -1,0 +1,85 @@
+/* NutriCare Lite Design System */
+
+:root {
+  /* Primary Palette */
+  --nutricare-navy: #1E3A5F;
+  --nutricare-mint: #7BC9A6;
+  --nutricare-white: #FFFFFF;
+  
+  /* Feedback Colors */
+  --nutricare-coral: #E67E73;
+  --nutricare-amber: #F4A261;
+  --nutricare-success: #7BC9A6;
+  --nutricare-info: #60A5FA;
+  
+  /* Neutrals */
+  --nutricare-gray-50: #F9FAFB;
+  --nutricare-gray-100: #F3F4F6;
+  --nutricare-gray-300: #D1D5DB;
+  --nutricare-gray-600: #4B5563;
+  --nutricare-gray-900: #111827;
+  
+  /* Spacing System (4px base) */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+}
+
+/* Typography */
+.nutricare-h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  color: var(--nutricare-gray-900);
+}
+
+.nutricare-h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  color: var(--nutricare-gray-900);
+}
+
+.nutricare-h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  color: var(--nutricare-gray-900);
+}
+
+.nutricare-body {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--nutricare-gray-900);
+}
+
+.nutricare-body-small {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--nutricare-gray-600);
+}
+
+.nutricare-caption {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: var(--nutricare-gray-600);
+}
+
+.nutricare-label {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--nutricare-gray-900);
+}
